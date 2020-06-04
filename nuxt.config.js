@@ -1,3 +1,4 @@
+
 module.exports = {
   mode: 'universal',
 
@@ -5,12 +6,12 @@ module.exports = {
     port: 5000, // default: 5000
   },
 
-/*
-** Headers of the page
-*/
+  /*
+  ** Headers of the page
+  */
   head: {
-    title: 'Nie - 饲养猪',
-    titleTemplate: '%s | nie.饲养猪🐖',
+    title: '饲养员的窝',
+    titleTemplate: '%s | @nie.im',
     meta: [
       { charset: 'utf-8' },
       { 'http-equiv': 'cleartype', content: 'on' },
@@ -29,12 +30,12 @@ module.exports = {
       {
         async: 'async',
         type: 'text/javascript',
-        src: '//cdn.guaiwola.com/blog/intersection-polyfill.js'
+        src: 'https://cdn.guaiwola.com/blog/intersection-polyfill.js'
       },
       {
         async: 'async',
         type: 'text/javascript',
-        src: '//www.googletagmanager.com/gtag/js?id=UA-144196694-1'
+        src: 'https://www.googletagmanager.com/gtag/js?id=UA-144196694-1'
       },
       {
         // Global site tag (gtag.js) - Google Analytics
@@ -74,28 +75,23 @@ module.exports = {
   */
   plugins: [
     {
-      src: '~/plugins/marked.js',
-  
+      src: '~/plugins/marked.js'
     },
     {
-      src: '~/plugins/highlight.js',
-
+      src: '~/plugins/highlight.js'
     },
     {
-      src: '~/plugins/gravatar.js',
-
+      src: '~/plugins/gravatar.js'
     },
     {
-      src: '~/plugins/filter.js',
- 
+      src: '~/plugins/filter.js'
     },
     {
-      src: '~/plugins/global-component.js',
-
+      src: '~/plugins/global-component.js'
     },
     {
       src: '~/plugins/copy.js',
-      ssr:true
+      ssr: false
     }
   ],
   /**
@@ -119,6 +115,9 @@ module.exports = {
         maxAge: 1000 * 60 * 60
       }
     ],
+    '@nuxtjs/axios',
+    // 请求代理配置，解决跨域
+    '@gauseen/nuxt-proxy'
   ],
 
   styleResources: {
@@ -131,7 +130,6 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-   
     extend(config, ctx) {
     }
   }

@@ -32,9 +32,7 @@
             </footer>
           </article>
           <div v-if="article.cover" class="split"></div>
-          <router-link :to="'/article/' + article.id">
-            <img v-if="article.cover"  class="article-image" :src="article.cover"/>
-          </router-link>
+          <img v-if="article.cover" class="article-image" :src="article.cover"/>
         </li>
       </ul>
       <div v-if="isLoadMore" class="load-more" @click="$emit('loadMore')"></div>
@@ -86,9 +84,9 @@ export default {
 
 .article-list-wrapper {
   box-sizing: border-box;
-  padding: 41px 60px;
+  padding: 50px 120px;
   background-color: #fff;
-  border-radius: 17px;
+  border-radius: 5px;
   background-color: var(--app-background-color-light);
   // box-shadow: 0 2px 24px 5px rgba(0, 0, 0, .05);
   transition: $theme-transition;
@@ -106,7 +104,7 @@ export default {
   }
 
   @media (max-width: 479px) {
-    padding: 14px;
+    padding: 10px;
     box-shadow: none;
     background: var(--app-background-color);
   }
@@ -135,7 +133,6 @@ export default {
 
     @media (max-width: 767px) {
       margin-bottom: 20px;
-
     }
   }
 }
@@ -144,20 +141,18 @@ export default {
   width: 100%;
   color: var(--font-color-article);
 
-
   .category {
     cursor: pointer;
     color: var(--font-color-light);
   }
 
   .title {
-    margin:44px 0 0;
+    margin: 10px 0 0;
     font-weight: $font-weight-bold;
     color: var(--font-color-dark);
 
     @media (max-width: 767px) {
       font-size: $title-font-size-small;
-      margin-top: 3px;
     }
 
     .article-link {
@@ -286,14 +281,10 @@ export default {
 .article-image {
   width: 340px;
   min-width: 340px;
-  border-radius: 8px;
+  border-radius: 4px;
   background-size: cover;
   // box-shadow: 0 5px 26px -3px rgba(0, 0, 0, .12);
   cursor: pointer;
-  transform: scale(1);
-  transition: transform .38s;
-
-
 
   @media (max-width: 1023px) {
     width: 100%;
@@ -303,12 +294,9 @@ export default {
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 }
-.article-image:hover {
-  transform: scale(1.06);
-}  
 
 .load-more {
   box-sizing: border-box;

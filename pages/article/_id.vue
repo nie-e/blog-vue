@@ -25,7 +25,7 @@
           <div class="tags-wrapper">
             <i class="icon icon-tags-fill"></i>
             <ul class="tags">
-              <router-link tag="li" class="tag-item" v-for="tag in article.tags" :key="tag.id" :to="`/tag/${tag.id}?name=${tag.name}`">{{tag.name}}</router-link>
+              <router-link tag="li" class="tag-item" v-for="tag in article.tags" :key="tag.id" :to="`/tags/${tag.id}/${tag.name}`">{{tag.name}}</router-link>
             </ul>
           </div>
           <div class="like-btn" @click="likeArticle">

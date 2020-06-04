@@ -1,0 +1,249 @@
+.markdown {
+  font-size: 15px;
+}
+
+@media (max-width: 479px) {
+  .markdown {
+    font-size: 14px;
+  }
+}
+
+.markdown pre {
+  margin: .5em 0;
+  padding: 1em;
+  font-size: 85%;
+  border-radius: 5px;
+  background-color: var(--code-background);
+  overflow-x: auto;
+}
+
+.markdown code {
+  margin: 0 .2em;
+  padding: .1em .2em;
+  background-color: var(--code-background);
+  font-family: Roboto Mono, Monaco, courier, monospace;
+}
+
+.markdown p {
+  margin: 1em 0;
+}
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  margin: 1em 0;
+  line-height: 1;
+}
+
+.markdown a {
+  margin: 0 .3em;
+  color: var(--link-color);
+}
+
+.markdown blockquote {
+  padding: 0 1em;
+  border-left: 0.25em solid var(--border-color);
+}
+
+.markdown blockquote p {
+  text-indent: 0rem;
+}
+
+.markdown blockquote p:first-child {
+  margin-top: 0;
+}
+
+.markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown ul {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+.markdown ul li {
+  padding: .3em;
+  list-style: disc;
+}
+
+.markdown ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+.markdown ol li {
+  padding: .3em;
+  list-style: decimal;
+}
+
+.markdown .image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5em 0;
+  width: 100%;
+}
+
+.markdown .image-wrapper .progress-image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0 1em;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.markdown .image-wrapper .progress-image img {
+  border-radius: 4px;
+  -webkit-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.markdown .image-wrapper .progress-image .thumbnail {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+
+.markdown .image-wrapper .progress-image .real-image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  padding: 0 1em;
+}
+
+.markdown .image-wrapper .progress-image .loaded {
+  opacity: 1;
+}
+
+.markdown .image-wrapper .progress-image .hidden {
+  opacity: 0;
+}
+
+.markdown .image-wrapper .image-caption {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.markdown .image-wrapper .image-caption > span {
+  display: inline-block;
+  padding: .1em .3em;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.gutter pre {
+  color: #999;
+}
+
+pre .hljs-function .hljs-keyword,
+pre .hljs-constant {
+  color: #0092db;
+}
+
+pre .hljs-keyword,
+pre .hljs-attribute {
+  color: #e96900;
+}
+
+pre .hljs-name, pre .hljs-tag {
+  color: #ff79c6;
+  font-weight: 400;
+}
+
+pre .hljs-number,
+pre .hljs-literal {
+  color: #AE81FF;
+}
+
+pre .hljs-tag,
+pre .hljs-tag .hljs-title,
+pre .hljs-change,
+pre .hljs-winutils,
+pre .hljs-flow,
+pre .hljs-lisp .hljs-title,
+pre .hljs-clojure .hljs-built_in,
+pre .hljs-nginx .hljs-title,
+pre .hljs-tex .hljs-special {
+  color: #2973b7;
+}
+
+pre .hljs-class .hljs-title {
+  color: green;
+}
+
+pre .hljs-symbol,
+pre .hljs-symbol .hljs-string,
+pre .hljs-value,
+pre .hljs-regexp {
+  color: #42b983;
+}
+
+pre .hljs-title {
+  color: #A6E22E;
+}
+
+pre .hljs-tag .hljs-value,
+pre .hljs-string,
+pre .hljs-subst,
+pre .hljs-haskell .hljs-type,
+pre .hljs-preprocessor,
+pre .hljs-ruby .hljs-class .hljs-parent,
+pre .hljs-built_in,
+pre .hljs-sql .hljs-aggregate,
+pre .hljs-django .hljs-template_tag,
+pre .hljs-django .hljs-variable,
+pre .hljs-smalltalk .hljs-class,
+pre .hljs-javadoc,
+pre .hljs-django .hljs-filter .hljs-argument,
+pre .hljs-smalltalk .hljs-localvars,
+pre .hljs-smalltalk .hljs-array,
+pre .hljs-attr_selector,
+pre .hljs-pseudo,
+pre .hljs-addition,
+pre .hljs-stream,
+pre .hljs-envvar,
+pre .hljs-apache .hljs-tag,
+pre .hljs-apache .hljs-cbracket,
+pre .hljs-tex .hljs-command,
+pre .hljs-prompt {
+  color: #42b983;
+}
+
+pre .hljs-comment,
+pre .hljs-java .hljs-annotation,
+pre .hljs-python .hljs-decorator,
+pre .hljs-template_comment,
+pre .hljs-pi,
+pre .hljs-doctype,
+pre .hljs-deletion,
+pre .hljs-shebang,
+pre .hljs-apache .hljs-sqbracket,
+pre .hljs-tex .hljs-formula {
+  color: #939393;
+}
+
+pre .hljs-coffeescript .hljs-javascript,
+pre .hljs-javascript .hljs-xml,
+pre .hljs-tex .hljs-formula,
+pre .hljs-xml .hljs-javascript,
+pre .hljs-xml .hljs-vbscript,
+pre .hljs-xml .hljs-css,
+pre .hljs-xml .hljs-cdata {
+  opacity: .5;
+}
+/*# sourceMappingURL=markdown.css.map */

@@ -35,7 +35,7 @@ const defaultStar = {
     }
   ],
   created_date: Date.now(),
-  cover: 'https://i.loli.net/2020/04/24/3CSFlLAmf5vYs4t.jpg'
+  cover: 'https://cdn.guawola.com/blog/lighthouse.jpeg'
 }
 
 export default {
@@ -110,6 +110,8 @@ export default {
   height: calc(100vh - 245px);
 
   @media (max-width: 1023px) {
+    margin-top: -160px;
+    height: 100vh;
   }
 
   @media (max-width: 479px) {
@@ -120,6 +122,6 @@ export default {
 .article-wrapper {
   position: relative;
   width: 100%;
-  margin-top: -18vh;
+  margin-top: -10vh;
 }
 </style>

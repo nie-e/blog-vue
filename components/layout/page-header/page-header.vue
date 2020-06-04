@@ -2,7 +2,9 @@
   <header class="header-container" :class="homeMobileClass">
     <div class="header-logo">
       <switch-theme :size="'30px'"></switch-theme>
-      <i class="logo">Nie</i>
+      <a href="/">
+        <i class="logo">饲养员の窝</i>
+      </a>
     </div>
     <nav class="nav-wrapper">
       <desktop-nav class="desktop-nav" :navList="navList"></desktop-nav>
@@ -46,7 +48,7 @@ export default {
   align-items: center;
   height: 160px;
   width: 100%;
-  max-width: 1293px;
+  max-width: 1331px;
   margin: 0 auto;
   z-index: $index-top;
   box-sizing: border-box;

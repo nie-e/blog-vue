@@ -1,6 +1,6 @@
 export const state = () => ({
   theme: 'light',
-  isShowSearch: true,
+  isShowSearch: false,
 })
 
 export const mutations = {

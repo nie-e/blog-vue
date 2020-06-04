@@ -42,7 +42,7 @@ export default {
   margin: 0 auto;
   padding: 5vh 5% 15vh;
   font-weight: $font-weight-bold;
-  border-radius: 12px !important;
+  border-radius: 5px;
   background: no-repeat center center;
   background-size: cover;
   box-sizing: border-box;
@@ -82,7 +82,7 @@ export default {
       text-align: center;
 
       @media (max-width: 479px) {
-        padding: 0 38px;
+        padding: 0 15px;
         font-size: $font-size-medium;
       }
     }

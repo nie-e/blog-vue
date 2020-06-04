@@ -5,9 +5,6 @@
     :style="{fontSize: size}"
     @click="switchTheme"
   ></i>
-
-
-
 </template>
 
 <script>
@@ -20,12 +17,6 @@ export default {
       default: "30px"
     }
   },
-
-
-
-
-
-
 
   computed: {
     theme () {

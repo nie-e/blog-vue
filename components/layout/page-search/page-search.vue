@@ -6,7 +6,7 @@
         <i class="icon icon-close"></i>
       </div>
       <div class="search-wrapper">
-        <input class="search-input" type="text" placeholder="点我点我~~" maxlength="10" v-model="searchVal" @keyup="debouncedSearch">
+        <input class="search-input" type="text" placeholder="2333..." maxlength="10" v-model="searchVal" @keyup="debouncedSearch">
         <div class="search-result">为你找到 {{total}} 项结果</div>
         <loading v-if="!articles.length && loading"></loading>
         <ul class="result-list" v-show="articles.length">
@@ -26,8 +26,8 @@
       </div>
       <footer class="footer">
         <switch-theme :size="'18px'"></switch-theme>
-        <span class="logo">饲养猪.</span>
-        <span class="desc">#&nbsp;累了&nbsp;😔...&nbsp;#</span>
+        <span class="logo">饲养员.</span>
+        <span class="desc">#&nbsp;惟有二次元&nbsp;长情陪伴&nbsp;#</span>
       </footer>
     </aside>
   </div>
@@ -38,9 +38,6 @@ import { debounce } from 'throttle-debounce'
 import { mapMutations, mapState } from 'vuex'
 import TagList from '@/components/base/tag-list/tag-list'
 import SwitchTheme from '@/components/base/switch-theme/switch-theme'
-
-
-
 
 export default {
   components: {

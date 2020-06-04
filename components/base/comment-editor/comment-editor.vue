@@ -90,7 +90,8 @@ import { getCursorPosition, setCursorPosition } from '@/services/utils/dom'
 import gravatar from '@/services/gravatar/gravatar'
 
 const emojiList = [
-  '😃', '😂', '😅', '😉', '😌', '😔', '😓', '😘', '😡', '😭', '😱', '😳', '😵',
+
+  '😋', '😂','🤣','😅', '😉', '😌', '😔', '😓', '😘', '😡', '😭', '😱', '😳', '😵',
   '🌚', '👍', '👎', '💪', '🌹', '💊'
 ]
 

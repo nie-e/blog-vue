@@ -1,7 +1,7 @@
 <template>
   <div class="not-found-container">
     <div class="code">404</div>
-    <div class="desc">没有您想要的东西呢😀 /(ㄒoㄒ)/~~</div>
+    <div class="desc">页面未找到 /(ㄒoㄒ)/~~</div>
     <router-link class="redirect-btn" to="/">回到首页</router-link>
   </div>
 </template>

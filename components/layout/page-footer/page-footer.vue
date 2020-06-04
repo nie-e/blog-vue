@@ -3,7 +3,7 @@
     <div class="footer-wrapper">
       <a class="between">
         <switch-theme :size="'18px'"></switch-theme>
-        <span class="logo">Nie</span>
+        <span class="logo">饲养员</span>
       </a>
       <div class="menu-wrapper">
         <desktop-nav :navList="navList"></desktop-nav>
@@ -21,8 +21,10 @@
       </div>
     </div>
     <div class="footer-copyright">
-      <span class="copyright">© 2020 <span class="logo">Nie.捏萌</span></span>. All Right Reserved.
-      <div class="record-number">京ICP备19002469号-1</div>
+      <span class="copyright">© 2020 <span class="logo">Nie.饲养员</span></span>. All Right Reserved.
+      <div class="record-number" onclick="window.open('http://www.beian.miit.gov.cn')">
+        京ICP备19002469号-1
+      </div>
     </div>
   </footer>
 </template>
@@ -156,5 +158,9 @@ export default {
 
 .record-number {
   margin-top: 10px;
+  cursor: pointer;
+    &:hover {
+    color: #75bfd7;
+  }
 };
 </style>

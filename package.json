@@ -1,8 +1,8 @@
 {
-  "name": "blog-nuxt",
+  "name": "nie-blog-nuxt",
   "version": "1.0.0",
   "description": "个人博客 惟有文字 长情陪伴",
-  "author": "siyangyuan",
+  "author": "饲养员",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
@@ -11,7 +11,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@gauseen/nuxt-proxy": "^1.0.1",
+    "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/component-cache": "^1.1.5",
+    "@nuxtjs/proxy": "^2.0.0",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "@nuxtjs/style-resources": "^0.1.2",
     "axios": "^0.19.0",

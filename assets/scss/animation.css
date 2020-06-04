@@ -1,0 +1,105 @@
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+.mobile-slide-enter-active,
+.mobile-slide-leave-active {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.mobile-slide-enter,
+.mobile-slide-leave-to {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.search-slide-enter-active,
+.search-slide-leave-active {
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+@media (max-width: 1023px) {
+  .search-slide-enter-active,
+  .search-slide-leave-active {
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+}
+
+.search-slide-enter,
+.search-slide-leave-to {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.fade-move {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.fade-leave-active {
+  position: absolute;
+}
+
+.list-slide-enter, .list-slide-leave-to {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.list-slide-leave-active {
+  width: 100%;
+  position: absolute;
+}
+
+.slide-up-enter-active {
+  -webkit-transition: all .3s ease .1s;
+  transition: all .3s ease .1s;
+}
+
+.slide-up-leave-active {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.slide-up-enter,
+.slide-up-leave-active {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  opacity: 0;
+}
+
+.slide-up-move {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+/*# sourceMappingURL=animation.css.map */

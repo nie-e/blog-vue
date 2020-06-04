@@ -1,8 +1,5 @@
 <template>
-
   <div class="messages-container">
-
-
     <split-line :icon="'message'" :desc="'留言墙'"></split-line>
     <section class="editor-wrapper">
       <comment-editor ref="editor" :isMessageEditor="true" @send="onSend"></comment-editor>
@@ -208,26 +205,4 @@ export default {
     transform: scale(.65);
   }
 }
-
-
-.intro-cont-header {
-    background: #fff url(//game.gtimg.cn/images/tgideas/web201810/banner-about.jpg) no-repeat center top;
-    height: 705px;
-    background-size: auto 525px;
-        position: relative;
-}
-.intro-if {
-    color: #181818;
-    height: 520px;
-    width: 970px;
-    text-align: center;
-    padding: 0 0;
-    padding-top: 420px;
-    top: 0;
-    margin: 0 auto;
-    line-height: 26px;
-    font-size: 14px;
-}
-
-
 </style>
