@@ -5,7 +5,19 @@
       <span class="nav-dot"></span>
     </li>
     <li class="nav-list-item">
-      <i class="icon icon-search" @click="showSearch"></i>
+      <a class="nav-link" target="_blank" @click="See('https://crlo.guaiwola.com')" >大导航</a>
+      <span class="nav-dot"></span>
+    </li>
+    <li class="nav-list-item">
+      <a class="nav-link" target="_blank" @click="See('https://nie.im')">小飞机</a>
+      <span class="nav-dot"></span>
+    </li>
+    <li class="nav-list-item">
+      <a class="nav-link" target="_blank" @click="See('https://233.nie.im')" >聊天室</a>
+      <span class="nav-dot"></span>
+    </li>
+    <li class="nav-list-item">
+      <i class="icon icon-search" @click="showSearch"></i>  
     </li>
   </ul>
 </template>
@@ -25,7 +37,10 @@ export default {
 
     ...mapMutations({
       setShowSearch: 'app/setShowSearch'
-    })
+    }),
+    See (e) {
+    window.location.href= e
+    }
   }
 };
 </script>

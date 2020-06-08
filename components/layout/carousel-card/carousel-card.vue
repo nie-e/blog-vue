@@ -1,26 +1,6 @@
 <template>
   <div class="card-container">
     <div class="card-image" :style="{backgroundImage: `url(${articleCover})`}"></div>
-<!--     <div class="feature-wrapper">
-      <article class="feature-content">
-        <div class="feature-tag">{{article.category.name}}</div>
-        <h2 class="feature-text">
-          <a @click="nav">
-            {{article.title}}
-            <span
-              class="feature-dot"
-            ></span>
-          </a>
-        </h2>
-        <span class="feature-author">
-          by&nbsp;
-          <span class="author-name" v-for="author in article.authors" :key="author.id" @click.stop="navAuthor(author.id)">{{author.name}}</span>
-          <time :datetime="article.created_date | filterTime">
-            &nbsp;{{article.created_date | filterTime('Y-m-d')}}
-          </time>
-        </span>
-      </article>
-    </div>  -->
   </div>
 </template>
 

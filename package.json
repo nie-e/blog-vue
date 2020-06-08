@@ -1,7 +1,7 @@
 {
   "name": "nie-blog-nuxt",
-  "version": "1.0.0",
-  "description": "个人博客 惟有文字 长情陪伴",
+  "version": "1.0.1",
+  "description": "个人博客",
   "author": "饲养员",
   "private": true,
   "scripts": {
@@ -11,25 +11,22 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@gauseen/nuxt-proxy": "^1.0.1",
-    "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/component-cache": "^1.1.5",
-    "@nuxtjs/proxy": "^2.0.0",
-    "@nuxtjs/pwa": "^3.0.0-beta.16",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/style-resources": "^0.1.2",
-    "axios": "^0.19.0",
-    "cross-env": "^5.2.0",
+    "axios": "^0.19.2",
+    "cross-env": "^5.2.1",
     "dompurify": "^1.0.11",
     "gravatar": "^1.8.0",
-    "highlight.js": "^9.15.8",
-    "koa": "^2.6.2",
+    "highlight.js": "^9.18.1",
+    "koa": "^2.12.0",
     "marked": "^0.7.0",
-    "node-sass": "^4.12.0",
-    "nuxt": "^2.8.1",
-    "sass-loader": "^7.1.0",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.12.2",
+    "sass-loader": "^7.3.1",
     "throttle-debounce": "^2.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.19.4"
   }
 }

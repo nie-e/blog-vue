@@ -7,7 +7,8 @@
         <nuxt />
       </transition>
     </main>
-    <page-footer :navList="navList"></page-footer>
+    <page-footer :navList="navList">
+    </page-footer>
     <transition name="search-slide">
       <page-search v-if="isShowSearch"></page-search>
     </transition>
@@ -42,7 +43,7 @@ const navList = [
   {
     link: "/messages",
     name: "留言墙"
-  }
+  },
 ];
 
 export default {

@@ -34,7 +34,7 @@ export default {
   created() {
     // 标签
     this.name = this.$nuxt.$route.query.name
-    this.cover = 'https://resource.shirmy.me/lighthouse.jpeg'
+    this.cover = '//i.loli.net/2020/06/08/1GkMWwOJzv3qnDR.jpg'
     this.id = parseInt(this.$nuxt.$route.params.id)
   }
 }

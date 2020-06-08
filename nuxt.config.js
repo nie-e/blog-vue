@@ -11,14 +11,14 @@ module.exports = {
   */
   head: {
     title: '饲养员的窝',
-    titleTemplate: '%s | @nie.im',
+    titleTemplate: '%s | nie.im',
     meta: [
       { charset: 'utf-8' },
       { 'http-equiv': 'cleartype', content: 'on' },
       { 'http-equiv': 'Cache-Control' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
       { hid: 'keywords', name: 'keywords', content: '前端，JavaScript，博客，Node，Vue' },
-      { name: 'author', content: 'admin@nie.im' },
+      { name: 'author', content: 'admin@nie,im' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
@@ -30,24 +30,8 @@ module.exports = {
       {
         async: 'async',
         type: 'text/javascript',
-        src: 'https://cdn.guaiwola.com/blog/intersection-polyfill.js'
+        src: '//cdn.guaiwola.com/blog/intersection-polyfill.js'
       },
-      {
-        async: 'async',
-        type: 'text/javascript',
-        src: 'https://www.googletagmanager.com/gtag/js?id=UA-144196694-1'
-      },
-      {
-        // Global site tag (gtag.js) - Google Analytics
-        type: 'text/javascript',
-        innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-144196694-1');
-        `
-      }
     ],
     noscript: [
       {
@@ -115,9 +99,6 @@ module.exports = {
         maxAge: 1000 * 60 * 60
       }
     ],
-    '@nuxtjs/axios',
-    // 请求代理配置，解决跨域
-    '@gauseen/nuxt-proxy'
   ],
 
   styleResources: {
